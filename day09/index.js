@@ -4,19 +4,19 @@
   TDZ applies only to variables declared with let and const. Variables declared with var are not subject to TDZ.
 */
 
-// {
-//   console.log(a); // ReferenceError: a is not defined
-//   let a = 10;
-//   console.log(a); // 10
+{
+  console.log(a); // ReferenceError: a is not defined
+  let a = 10;
+  console.log(a); // 10
 
-//   console.log(b); // ReferenceError: b is not defined
-//   const b = 20;
-//   console.log(b); // 20
+  console.log(b); // ReferenceError: b is not defined
+  const b = 20;
+  console.log(b); // 20
 
-//   console.log(c); // ReferenceError: c is not defined
-//   let c = 30;
-//   console.log(c); // 30
-// }
+  console.log(c); // ReferenceError: c is not defined
+  let c = 30;
+  console.log(c); // 30
+}
 
 /* 
 variable and function hoisting 
